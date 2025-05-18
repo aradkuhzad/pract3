@@ -1,0 +1,73 @@
+.nav-header {
+    background: #ea8383;
+    padding: 32px 0px;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-and-menu {
+    display: flex;
+    align-items: center; /* Align logo and menu vertically */
+    gap: 70px; /* Adjust space between logo and menu */
+}
+
+.logo {
+    font-size: 28px; /* Text size */
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo svg {
+    height: 50px; /* SVG height, larger than text */
+    width: auto; /* Allow width to adjust proportionally */
+    margin-right: 2px; /* Space between icon and text */
+    flex-shrink: 0;
+    vertical-align: middle; /* Align SVG vertically with text */
+    position: relative;
+    top: 5px; /* Adjust this value to fine-tune vertical alignment */
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px; /* Adjust spacing between menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0;
+    border-radius: 0;
+    transition: none;
+}
+
+.nav-list a:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+.download-btn {
+    color: #666;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.download-btn:hover {
+    color: #000;
+}
