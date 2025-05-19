@@ -1,13 +1,21 @@
+/* Apply Inter font to all elements */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
 .nav-header {
     background: #ea8383;
     padding: 32px 0px;
     box-shadow: none;
     border-bottom: 1px solid #eee;
+    width: 1520.8px;
+    height: 110;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px; /* Adjust as needed */
@@ -22,21 +30,25 @@
 }
 
 .logo {
-    font-size: 28px; /* Text size */
+    font-size: 24px; /* Text size */
     font-weight: bold;
     color: #333;
     display: flex;
     align-items: center; /* Align items vertically */
 }
 
+.logo span {
+    letter-spacing: 1px; /* Add space between letters */
+}
+
 .logo svg {
-    height: 50px; /* SVG height, larger than text */
+    height: 45px;
     width: auto; /* Allow width to adjust proportionally */
-    margin-right: 2px; /* Space between icon and text */
+    margin-right: -10px; /* Reduced space between icon and text */
     flex-shrink: 0;
     vertical-align: middle; /* Align SVG vertically with text */
     position: relative;
-    top: 5px; /* Adjust this value to fine-tune vertical alignment */
+    top: 7px; /* Adjust this value to fine-tune vertical alignment */
 }
 
 .nav-list {
@@ -63,9 +75,13 @@
 }
 
 .download-btn {
+    position: absolute;
     color: #666;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1rem;
+    right: 245px;
+    top: 53px; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
 }
 
 .download-btn:hover {
