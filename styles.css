@@ -7,10 +7,8 @@ body {
 }
 
 .nav-header {
-    background: #ea8383;
     padding: 32px 0px;
     box-shadow: none;
-    border-bottom: 1px solid #eee;
     width: 1520.8px;
     height: 110;
 }
@@ -53,7 +51,7 @@ body {
     flex-shrink: 0;
     vertical-align: middle; /* Align SVG vertically with text */
     position: relative;
-    top: 8.8px; /* Adjust this value to fine-tune vertical alignment */
+    top: 8.7px; /* Adjust this value to fine-tune vertical alignment */
 }
 
 .nav-list {
@@ -63,8 +61,8 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    left: 26px;
-    top: 1px;
+    left: 22px;
+    top: 0px;
 }
 
 .nav-list a {
@@ -83,6 +81,7 @@ body {
 }
 
 .download-btn {
+    position: relative;
     color: #343a40;
     text-decoration: none; /* Remove default underline */
     font-size: 1rem;
@@ -98,7 +97,7 @@ body {
 
 .download-icon {
     height: 20px; /* Adjust icon size as needed */
-    margin: 0px 0px 0px 4px;
+    margin: 0px 0px 0px 5px;
 }
 
 .download-btn::after {
@@ -106,9 +105,9 @@ body {
     position: absolute; /* Restore missing position property */
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 1px; /* Underline thickness */
-    background-color: #343a40; /* Underline color */
+    width: 99%;
+    height: 0.2px; /* Underline thickness */
+    background-color: #151515e6; /* Underline color */
 }
 
 .download-btn:hover {
@@ -121,7 +120,7 @@ body {
 
 /* Adjust position if needed */
 .download-btn {
-    right: 245px; /* Adjust this value to position the button */
-    top: 53px; /* Keep vertical centering for now */
+    right: 58px; /* Adjust this value to position the button */
+    top: 13px; /* Keep vertical centering for now */
     transform: translateY(-50%);
 }
