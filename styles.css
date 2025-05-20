@@ -31,7 +31,7 @@ body {
 
 .logo {
     position: relative;
-    font-size: 23px; /* Text size */
+    font-size: 1.5rem !important; /* Text size */
     margin: 0px 0px 0px 4px;
     font-weight: bold;
     color: #151515e6;
@@ -58,11 +58,13 @@ body {
     position: relative;
     display: flex;
     gap: 16px; /* Adjust spacing between menu items */
+    font-weight: 600;
     list-style: none;
     padding: 0;
     margin: 0;
     left: 22px;
     top: 0px;
+    letter-spacing: -0.11111;
 }
 
 .nav-list a {
@@ -89,6 +91,8 @@ body {
     align-items: center;
     position: relative; /* Needed for absolute positioning of the underline */
     padding-bottom: 5px; /* Space for the underline */
+    margin: 0px 8px 0px 0px;
+    padding: 0px 0px 4px;
 }
 
 .download-text {
@@ -96,18 +100,21 @@ body {
 }
 
 .download-icon {
-    height: 20px; /* Adjust icon size as needed */
-    margin: 0px 0px 0px 5px;
+    position: relative;
+    height: 16px; /* Adjust icon size as needed */
+    margin: 0px 0px 0px 4px;
+    right: 3px;
+    top: 3px;
 }
 
 .download-btn::after {
     content: ''; /* Restore missing content property */
     position: absolute; /* Restore missing position property */
     left: 0;
-    bottom: 0;
-    width: 99%;
-    height: 0.2px; /* Underline thickness */
-    background-color: #151515e6; /* Underline color */
+    top: 25.5px;
+    width: 98%;
+    height: 0.1px; /* Underline thickness */
+    background-color: #000000e6; /* Underline color */
 }
 
 .download-btn:hover {
@@ -120,7 +127,7 @@ body {
 
 /* Adjust position if needed */
 .download-btn {
-    right: 58px; /* Adjust this value to position the button */
-    top: 13px; /* Keep vertical centering for now */
+    right: 49px; /* Adjust this value to position the button */
+    top: 9px; /* Keep vertical centering for now */
     transform: translateY(-50%);
 }
