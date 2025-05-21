@@ -92,7 +92,7 @@ body {
     position: relative; /* Needed for absolute positioning of the underline */
     padding-bottom: 5px; /* Space for the underline */
     margin: 0px 8px 0px 0px;
-    padding: 0px 0px 4px;
+    padding: 1px 0px 4px;
 }
 
 .download-text {
@@ -111,10 +111,10 @@ body {
     content: ''; /* Restore missing content property */
     position: absolute; /* Restore missing position property */
     left: 0;
-    top: 25.5px;
-    width: 98%;
-    height: 0.1px; /* Underline thickness */
-    background-color: #000000e6; /* Underline color */
+    top: 24.5px;
+    width: 100%;
+    height: 0.1px !important; /* Made underline visible again */
+    background-color: #000000; /* Underline color */
 }
 
 .download-btn:hover {
@@ -127,7 +127,8 @@ body {
 
 /* Adjust position if needed */
 .download-btn {
-    right: 49px; /* Adjust this value to position the button */
+    position: relative;
+    right: 54px; /* Adjust this value to position the button */
     top: 9px; /* Keep vertical centering for now */
     transform: translateY(-50%);
 }
