@@ -2,9 +2,11 @@
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    overflow-y: scroll; /* Add vertical scrollbar when content overflows */
-
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+
 
 .nav-header {
     padding: 32px 0px;
@@ -31,27 +33,28 @@ body {
 
 .logo {
     position: relative;
-    font-size: 1.5rem !important; /* Text size */
+    font-size: 23.2px; /* Text size */
     margin: 0px 0px 0px 4px;
-    font-weight: bold;
+    font-weight: 700;
     color: #151515e6;
     display: flex;
     align-items: center; /* Align items vertically */
-    left: 45px;
+    left: 43.5px;
+    top: -1px;
 }
 
 .logo span {
-    letter-spacing: 1px; /* Add space between letters */
+    letter-spacing: 0.9px; /* Add space between letters */
 }
 
 .logo svg {
-    height: 47px;
+    height: 48px;
     width: auto; /* Allow width to adjust proportionally */
     margin-right: -10px; /* Reduced space between icon and text */
     flex-shrink: 0;
     vertical-align: middle; /* Align SVG vertically with text */
     position: relative;
-    top: 8.7px; /* Adjust this value to fine-tune vertical alignment */
+    top: 10px; /* Adjust this value to fine-tune vertical alignment */
 }
 
 .nav-list {
@@ -62,8 +65,8 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    left: 22px;
-    top: 0px;
+    left: 21px;
+    top: -1px;
     letter-spacing: -0.11111;
 }
 
@@ -132,3 +135,74 @@ body {
     top: 9px; /* Keep vertical centering for now */
     transform: translateY(-50%);
 }
+
+.img-background {
+    position: relative;
+    top: -115px;
+    margin-right: -380px;
+    z-index: -1;
+}
+
+.img-background img {
+    width: 760px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+.hero-section {
+    background: #fff;
+    width: 40vw;
+    min-height: 80vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.hero-section h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    line-height: 1.05;
+}
+
+.hero-section p {
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 60px;
+}
+
+.hero-btn {
+    font-size: 1rem;
+    width: 195.95px;
+    height: 61.33px;
+    padding: 17.8672px 37.504px;
+    margin: 48px 16px 48px 0px;
+    border: none;
+    border-radius: 2px;
+    background: #23272a;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 8px 32px #0001;
+    transition: background 0.2s;
+}
+.hero-btn:hover {
+    background: #111;
+}
+
+
+
+
+
+
+
+
